@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" id="fade-in">
+<head>
+    <meta charset="utf-8">
+    <title>Your WEBSITE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/websites.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body ontouchstart="" onload="init();">
+     <div class="wrapper">
+			<div class="boxwelcome welcome">
+					<div id="gallery_container">
+    
+						<img id="img1" src="images/jacket1.png">
+						<img style="display:none;" id="img2" src="images/sixcover.png">
+                        <img id="img3" src="images/jacket3.png">
+                        <img id="img4" src="images/carasdreamcover.png">
+                        <img id="img5" src="images/editorial1.png">
+                        <img id="img6" src="images/valeriespread.png">
+                        <img id="img7" src="images/editorial2.png">
+                        <img id="img8" src="images/dancemastersspread.png">
+
+                        <sup id="mediaarrow_r0" style="cursor:pointer;">&#x25B6;&#xFE0E;</sup>
+                        <sup id="mediaarrow_r1" style="cursor:pointer;">&#x25B6;&#xFE0E;</sup>
+                        <sup id="mediaarrow_r2" style="cursor:pointer;">&#x25B6;&#xFE0E;</sup>
+                        <sup id="mediaarrow_r3" style="cursor:pointer;">&#x25B6;&#xFE0E;</sup>
+                        <sup id="mediaarrow_r4" style="cursor:pointer;">&#x25B6;&#xFE0E;</sup>
+                        <sup id="mediaarrow_r5" style="cursor:pointer;">&#x25B6;&#xFE0E;</sup>
+                        <sup id="mediaarrow_r6" style="cursor:pointer;">&#x25B6;&#xFE0E;</sup>
+                        <sup id="mediaarrow_r7" style="cursor:pointer;">&#x25B6;&#xFE0E;</sup>
+
+                        <sup id="mediaarrow_l0" style="cursor:pointer;">&#x25C0;&#xFE0E;</sup>
+                        <sup id="mediaarrow_l1" style="cursor:pointer;">&#x25C0;&#xFE0E;</sup>
+                        <sup id="mediaarrow_l2" style="cursor:pointer;">&#x25C0;&#xFE0E;</sup>
+                        <sup id="mediaarrow_l3" style="cursor:pointer;">&#x25C0;&#xFE0E;</sup>
+                        <sup id="mediaarrow_l4" style="cursor:pointer;">&#x25C0;&#xFE0E;</sup>
+                        <sup id="mediaarrow_l5" style="cursor:pointer;">&#x25C0;&#xFE0E;</sup>
+                        <sup id="mediaarrow_l6" style="cursor:pointer;">&#x25C0;&#xFE0E;</sup>
+                        <sup id="mediaarrow_l7" style="cursor:pointer;">&#x25C0;&#xFE0E;</sup>
+                        <sup id="mediaarrow_l8" style="cursor:pointer;">&#x25C0;&#xFE0E;</sup>
+                    </div>
+                        <p>A Simple JQuery/CSS Gallery</p>
+                </div>
+            </div>
+        </div>
+
+<script>
+$(document).ready(function(){
+    $("#mediaarrow_r1").click(function(){
+        $("#mediaarrow_r1").hide();
+        $("#mediaarrow_r2").show();
+        $("#mediaarrow_l2").show();
+            $("#img1").hide(600).fadeOut(600);
+            $("#img2").show(600).fadeIn(600);
+                $("#mediaarrow_l2").click(function(){
+                    $("#mediaarrow_r1").show();
+                    $("#mediaarrow_r2").hide();
+                    $("#mediaarrow_l2").hide();
+                        $("#img2").hide(600).fadeOut(600);
+                        $("#img1").show(600).fadeIn(600);
+    });
+    });
+    $("#mediaarrow_r2").click(function(){
+        $("#mediaarrow_r2").hide();
+        $("#mediaarrow_r3").show();
+        $("#mediaarrow_l3").show();
+        $("#mediaarrow_l2").hide();
+            $("#img2").hide(600).fadeOut(600);
+            $("#img3").show(600).fadeIn(600);
+                $("#mediaarrow_l3").click(function(){
+                    $("#mediaarrow_r2").show();
+                    $("#mediaarrow_r3").hide();
+                    $("#mediaarrow_l3").hide();
+                    $("#mediaarrow_l2").show();
+                    $("#img3").hide(600).fadeOut(600);
+                    $("#img2").show(600).fadeIn(600);
+        });
+    });
+    $("#mediaarrow_r3").click(function(){
+        $("#mediaarrow_r3").hide();
+        $("#mediaarrow_r4").show();
+        $("#mediaarrow_l4").show();
+        $("#mediaarrow_l5").hide();
+            $("#img3").hide(600).fadeOut(600);
+            $("#img4").show(600).fadeIn(600);
+                $("#mediaarrow_l4").click(function(){
+                    $("#mediaarrow_r3").show();
+                    $("#mediaarrow_r4").hide();
+                    $("#mediaarrow_l4").hide();
+                    $("#mediaarrow_l3").show();
+                    $("#img4").hide(600).fadeOut(600);
+                    $("#img3").show(600).fadeIn(600);
+        });
+    });
+    $("#mediaarrow_r4").click(function(){
+        $("#mediaarrow_r4").hide();
+        $("#mediaarrow_r5").show();
+        $("#mediaarrow_l5").show();
+        $("#mediaarrow_l4").hide();
+            $("#img4").hide(600).fadeOut(600);
+            $("#img5").show(600).fadeIn(600);
+                $("#mediaarrow_l5").click(function(){
+                    $("#mediaarrow_r4").show();
+                    $("#mediaarrow_r5").hide();
+                    $("#mediaarrow_l5").hide();
+                    $("#mediaarrow_l4").show();
+                    $("#img5").hide(600).fadeOut(600);
+                    $("#img4").show(600).fadeIn(600);
+        });
+    });
+    $("#mediaarrow_r5").click(function(){
+        $("#mediaarrow_r5").hide();
+        $("#mediaarrow_r6").show();
+        $("#mediaarrow_l6").show();
+        $("#mediaarrow_l5").hide();
+            $("#img5").hide(600).fadeOut(600);
+            $("#img6").show(600).fadeIn(600);
+                $("#mediaarrow_l6").click(function(){
+                    $("#mediaarrow_r5").show();
+                    $("#mediaarrow_r6").hide();
+                    $("#mediaarrow_l6").hide();
+                    $("#mediaarrow_l5").show();
+                    $("#img6").hide(600).fadeOut(600);
+                    $("#img5").show(600).fadeIn(600);
+        });
+    });
+    $("#mediaarrow_r6").click(function(){
+        $("#mediaarrow_r6").hide();
+        $("#mediaarrow_r7").show();
+        $("#mediaarrow_l7").show();
+        $("#mediaarrow_l6").hide();
+            $("#img6").hide(600).fadeOut(600);
+            $("#img7").show(600).fadeIn(600);
+                $("#mediaarrow_l7").click(function(){
+                    $("#mediaarrow_r6").show();
+                    $("#mediaarrow_r7").hide();
+                    $("#mediaarrow_l7").hide();
+                    $("#mediaarrow_l6").show();
+                    $("#img7").hide(600).fadeOut(600);
+                    $("#img6").show(600).fadeIn(600);
+        });
+    });
+    $("#mediaarrow_r7").click(function(){
+        $("#mediaarrow_r7").hide();
+        $("#mediaarrow_l8").show();
+        $("#mediaarrow_l7").hide();
+            $("#img7").hide(600).fadeOut(600);
+            $("#img8").show(600).fadeIn(600);
+                $("#mediaarrow_l8").click(function(){
+                    $("#mediaarrow_r7").show();
+                    $("#mediaarrow_r0").hide();
+                    $("#mediaarrow_l8").hide();
+                    $("#mediaarrow_l7").show();
+                    $("#img8").hide(600).fadeOut(600);
+                    $("#img7").show(600).fadeIn(600);
+        });
+    });
+});
+</script>
+</body>
+</html>
