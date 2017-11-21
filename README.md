@@ -5,7 +5,7 @@ I couldn't find a simple and free media gallery online anywhere. Fotorama was pr
 
 Description
 ----------------
-Uses Inline jQuery to show/hide images by clicking on left/right arrows. 
+Uses jQuery & CSS to show/hide images by clicking on left/right arrows. 
 
 Demo
 ----------------
@@ -67,21 +67,24 @@ Switch to 'websites.css' in your text-editor:
 				}'
 
 		IMPORTANT! 
-			If you want to style your arrows it is important that you change the styling in each of the '#mediaarrow' ID's 
-				For instance to make all the arrows 'red' you have to change color:'grey' to color:'red' in each '#media_arrow_"X"' ID.
+			If you want to style your arrows you need to change the styling in each of the '#mediaarrow' id's 
+				For instance to make all the arrows 'red' you have to change color:'grey' to color:'red' in each '#media_arrow_"X"' id.
 
-				Alternatively, you can style each arrow individually to a difference color so that it changes as you progress through the gallery. 
+				You could also style each arrow individually so that it changes colors as you progress through the gallery... idk.
 
 HTML
 ------
 
 Switch to 'index.html' in your text-editor:
 
-	In the head of the HTML you will see the links to your stylesheets and to googles jquery library. This is critical, without it the gallery will not function. 
+	In the head of the HTML you will see the links to your stylesheets and to googles jquery library. 'normalize.css' is a reset-overide style sheet, and should always be placed before your own custom sheet.
 
 		example: 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="css/normalize.css">
+    	<link rel="stylesheet" href="css/websites.css">
 
 
 	The rest of the HTML body is laid out as follows:
@@ -116,7 +119,7 @@ Switch to 'index.html' in your text-editor:
 					                        $("#img1").show(600).fadeIn(600);
 					    });
 
-			To change the duration between images simply delete (600) in the relavent function  
+			To change the duration between images simply delete (600) in the relevent function  
 
 				example: if you want to change the duration between #img1 and #img2, go to: 
 
